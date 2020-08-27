@@ -1,0 +1,86 @@
+/* FROM SITE */
+#content
+  margin: 0 auto
+  min-height: 400px
+  padding-right: 19px
+  padding-top: 20px
+  padding-left: 20px
+  position: relative
+  max-width: 685px
+
+/* NEW STYLES */
+.p-web
+  .slider__for
+    margin-bottom: 10px
+    position: relative
+
+    &__container
+      outline: none
+
+    img
+      max-width: 100%
+
+  .slider__for, .slider__nav
+    img
+      outline: none
+
+      &:hover, &:focus
+        outline: none
+
+  .slider__nav
+    &__container
+      margin: 0 3px
+      border: 3px solid #e81c23
+      position: relative
+
+      &:focus
+        outline: none
+
+    .slick-current
+      &::after
+        bottom: -5px
+        content: url(../img/yellow-arrow.svg)
+        left: 50%
+        position: absolute
+        transform: translateX(-50%)
+
+
+    img
+      width: 100%
+
+    .slick-list
+      padding: 0 !important
+
+  .slider-arrow
+    position: absolute
+    z-index: 1
+    top: 50%
+    background: rgba(96, 96, 96, 0.5)
+    width: 40px
+    height: 40px
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+    -webkit-transition: all 0.2s linear
+    -moz-transition: all 0.2s linear
+    -ms-transition: all 0.2s linear
+    -o-transition: all 0.2s linear
+    transition: all 0.2s linear
+    
+    &:hover
+      -webkit-transform: scale(1.2)
+      -moz-transform: scale(1.2)
+      -ms-transform: scale(1.2)
+      -o-transform: scale(1.2)
+      transform: scale(1.2)
+      -webkit-transition: all 0.2s linear
+      -moz-transition: all 0.2s linear
+      -ms-transition: all 0.2s linear
+      -o-transition: all 0.2s linear
+      transition: all 0.2s linear
+
+  .slider-next
+    right: 20px
+
+  .slider-prev
+    left: 20px
